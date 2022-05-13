@@ -1,0 +1,26 @@
+.header {
+    color: var(--color-dark);
+    background: var(--color-white);
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding) 0;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__link {
+    color: var(--color-dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.header__righrt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+}

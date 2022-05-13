@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as var;
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #{var.$color-white};
+    --color-light: #{var.$color-light};
+    --color-gray: #{var.$color-gray};
+    --color-primary: #{var.$color-primary};
+    --color-secondary: #{var.$color-secondary};
+    --color-success: #{var.$color-success};
+    --color-danger: #{var.$color-danger};
+    --color-dark: #{var.$color-dark};
+    --color-black: #{var.$color-black};
+    
+    --border-radius: #{var.$border-radius};
+    --card-border-radius: #{var.$card-border-radius};
+    --btn-padding: #{var.$btn-padding};
+    --search-paddind: #{var.$search-padding};
+    --card-padding: #{var.$card-padding};
+    
+    --sticky-left-left: #{var.$sticky-top-left};
+    --sticky-top-right: #{var.$sticky-top-righte};
+ 
+}
+
+body {
+    background: var(--color-light);
+    color: var(--color-dark);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
