@@ -181,8 +181,16 @@ body {
   font-weight: 500;
 }
 
+img {
+  width: 20px;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 h1,
@@ -257,6 +265,7 @@ p {
 .user-img {
   cursor: pointer;
   width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -265,9 +274,95 @@ p {
   object-fit: cover;
 }
 
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  height: auto;
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+}
+.user-info__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.user-info__link {
+  opacity: 0.8;
+}
+
+.navbar {
+  width: 100%;
+  margin-top: 1rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+
+.navbar__itme {
+  position: relative;
+  width: 100%;
+}
+.navbar__itme:hover {
+  background: var(--color-light);
+}
+
+.navbar__link {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-dark);
+  padding: var(--card-padding);
+}
+.navbar__link:hover {
+  color: var(--color-primary);
+}
+
+.navbar__title {
+  font-weight: 600;
+}
+
+.navbar__icon {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar__itme.active {
+  background: var(--color-light);
+}
+
+.navbar__itme.active .navbar__link {
+  color: var(--color-primary);
+}
+
+.navbar__itme.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.6rem;
+  height: 100%;
+  background: var(--color-primary);
+}
+
+.navbar__itme:first-child::before {
+  border-top-left-radius: var(--card-border-radius);
+}
+
+.navbar__itme:last-child::before {
+  border-bottom-left-radius: var(--card-border-radius);
+}
+
 .container {
   width: 94%;
   margin: 0 auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 20rem auto 25rem;
 }
 
 .header {
@@ -299,6 +394,12 @@ p {
   justify-content: center;
   align-items: center;
   column-gap: 1.5rem;
+}
+
+.aside-left {
+  width: 100%;
+  margin-top: 1.5rem;
+  position: relative;
 }
 
 .text-color-white {
