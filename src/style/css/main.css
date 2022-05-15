@@ -181,10 +181,6 @@ body {
   font-weight: 500;
 }
 
-img {
-  width: 20px;
-}
-
 a {
   text-decoration: none;
 }
@@ -419,6 +415,94 @@ p {
   background: var(--color-white);
 }
 
+.story {
+  width: 100%;
+  overflow: hidden;
+}
+
+.story__itmes {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.story__itme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  height: 10rem;
+  background: var(--color-dark);
+  background-image: url("../../images/story-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.story__itme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, transparent);
+  border-radius: var(--card-border-radius);
+  opacity: 0.4;
+  z-index: 0;
+}
+.story__itme:hover {
+  cursor: pointer;
+}
+
+.story__itme:nth-child(2) {
+  background-image: url("../../images/profile-19.jpg");
+}
+
+.story__itme:nth-child(3) {
+  background-image: url("../../images/story-2.jpg");
+}
+
+.story__itme:nth-child(4) {
+  background-image: url("../../images/story-4.jpg");
+}
+
+.story__itme:nth-child(5) {
+  background-image: url("../../images/story-5.jpg");
+}
+
+.story__itme:nth-child(6) {
+  background-image: url("../../images/story-6.jpg");
+}
+
+.story__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--color-primary);
+  padding: 2px;
+  z-index: 1;
+}
+.story__img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.story__title {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
 .container {
   width: 94%;
   margin: 0 auto;
@@ -426,7 +510,29 @@ p {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 20rem auto 25rem;
+  grid-template-columns: 20rem auto 20rem;
+  column-gap: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-2 {
+  flex: 0, 0, auto;
+  width: calc((100% - 50px) / 6);
+}
+
+.gx-10 {
+  margin: 0 5px;
+}
+
+.gx-10:first-child {
+  margin-left: 0;
+}
+
+.gx-10:last-child {
+  margin-right: 0;
 }
 
 .header {
@@ -472,6 +578,14 @@ p {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 0.6rem;
+}
+
+.main {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
 }
 
 .text-color-white {

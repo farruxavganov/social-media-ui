@@ -1,4 +1,21 @@
 .main-grid {
     display: grid;
-    grid-template-columns: 20rem auto 25rem;
+    grid-template-columns: 20rem auto 20rem;
+    column-gap: 20px;
+}
+.row {
+    display: flex;
+}
+.col-2 {
+    flex: 0, 0, auto;
+    width: calc((100% - 5*10px)/6);
+}
+.gx-10 {
+    margin: 0 5px;
+}
+.gx-10:first-child {
+    margin-left: 0;
+}
+.gx-10:last-child {
+    margin-right: 0;
 }
