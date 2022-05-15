@@ -168,7 +168,7 @@ html {
   --border-radius: 2rem;
   --card-border-radius: 1rem;
   --btn-padding: 0.6rem 2rem;
-  --search-paddind: 0.6rem 1rem;
+  --search-padding: 0.6rem 1rem;
   --card-padding: 1rem;
   --sticky-left-left: 5.4rem;
   --sticky-top-right: 18rem;
@@ -223,7 +223,7 @@ p {
 .search-bar {
   position: relative;
   background: var(--color-light);
-  padding: var(--search-paddind);
+  padding: var(--search-padding);
   padding-left: 2.3rem;
   border-radius: var(--border-radius);
   width: 25%;
@@ -501,6 +501,64 @@ p {
   font-weight: 400;
   font-size: 0.8rem;
   z-index: 1;
+}
+
+.create-input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--color-white);
+  color: var(--color-dark);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+  margin-top: 1rem;
+}
+
+.create-input-box__img {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.create-input-box__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-weight: 600;
+  padding: 0.6rem;
+  /* WebKit, Edge */
+  /* Firefox 4-18 */
+  /* Firefox 19+ */
+  /* IE 10-11 */
+  /* Edge */
+  /* MODERN BROWSER */
+}
+.create-input-box__input::-webkit-input-placeholder {
+  color: var(--color-dark);
+}
+.create-input-box__input:-moz-placeholder {
+  color: var(--color-dark);
+  opacity: 1;
+}
+.create-input-box__input::-moz-placeholder {
+  color: var(--color-dark);
+  opacity: 1;
+}
+.create-input-box__input:-ms-input-placeholder {
+  color: var(--color-dark);
+}
+.create-input-box__input::-ms-input-placeholder {
+  color: var(--color-dark);
+}
+.create-input-box__input::placeholder {
+  color: var(--color-dark);
+}
+
+.create-input-box__label {
+  padding: 0.5rem 2rem;
 }
 
 .container {
