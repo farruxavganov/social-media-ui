@@ -561,6 +561,117 @@ p {
   padding: 0.5rem 2rem;
 }
 
+.card {
+  width: 100%;
+  height: auto;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin-top: 0.7rem;
+}
+
+.card__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__name {
+  display: flex;
+  column-gap: 0.8rem;
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card__loc {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+.card__menu {
+  font-size: 1.2rem;
+}
+.card__menu:hover {
+  cursor: pointer;
+}
+
+.card__main-img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.7rem;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--card-border-radius);
+}
+
+.card__body {
+  margin-top: 0.1rem;
+}
+
+.card__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--search-padding);
+}
+
+.card__icon {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  color: var(--color-dark);
+}
+.card__icon:hover {
+  cursor: pointer;
+}
+.card__icon:first-child {
+  margin-left: 0;
+}
+.card__icon:last-child {
+  margin-right: 0;
+}
+.card__icon--book {
+  margin: 0;
+}
+
+.card__disc {
+  display: flex;
+}
+
+.card__users-img {
+  display: flex;
+  overflow: hidden;
+  width: 4.2rem;
+}
+.card__users-img img {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  margin-left: -0.7rem;
+}
+.card__users-img img:first-child {
+  margin: 0;
+}
+
+.card__infos {
+  font-weight: 500;
+  margin-left: 0.2rem;
+}
+
+.card__bold {
+  font-weight: 700;
+}
+
+.card__commit-info {
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
 .container {
   width: 94%;
   margin: 0 auto;
@@ -644,6 +755,10 @@ p {
   min-width: 100%;
   height: auto;
   margin-top: 1.5rem;
+}
+
+.posts {
+  margin-top: 1rem;
 }
 
 .text-color-white {
