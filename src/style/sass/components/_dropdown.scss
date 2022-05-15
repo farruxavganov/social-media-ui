@@ -1,0 +1,37 @@
+.dropdown {
+    position: absolute;
+    width: 22rem;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    background: var(--color-white);
+    z-index: 2;
+}
+.dropdown__item {
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+    padding: .6rem 0;
+}
+.dropdown__img {
+    flex-shrink: 0;
+}
+.dropdown__title {
+    font-weight: 700;
+}
+.dropdown__disc {
+    font-weight: 600;
+}
+.dropdown__time {
+    font-size: .8rem;
+}
+.dropdown::before {
+    content: '';
+    top: 1.5rem;
+    left: -.6rem;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    transform: rotate(45deg);
+    background: var(--color-white);
+}

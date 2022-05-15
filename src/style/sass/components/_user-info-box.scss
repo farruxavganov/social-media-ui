@@ -1,0 +1,18 @@
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    height: auto;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &__link {
+        opacity: 0.8;
+    }
+}
