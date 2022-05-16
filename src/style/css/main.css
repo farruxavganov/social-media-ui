@@ -978,7 +978,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1.5rem;
+  column-gap: 10px;
 }
 
 @media (max-width: 991.98px) {
