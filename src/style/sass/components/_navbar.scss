@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as mix;
 .navbar {
     width: 100%;
     margin-top: 1rem;
@@ -31,6 +32,7 @@
 }
 .navbar__itme.active {
     background: var(--color-light);
+    border-top-left-radius: var(--card-border-radius);
 }
 .navbar__itme.active .navbar__link {
     color: var(--color-primary);
@@ -55,4 +57,24 @@
     top: 0;
     left: 110%;
     z-index: 8;
+}
+@include mix.large {
+    .navbar {
+        position: fixed;
+        width: 5rem;
+        z-index: 8;
+    }
+}
+@include mix.small {
+    .navbar {
+        right: 2rem;
+        width: 5rem;
+    }
+}
+@include mix.x-small {
+    .navbar {
+        right: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
 }

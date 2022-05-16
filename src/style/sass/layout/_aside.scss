@@ -1,4 +1,6 @@
+@use "../abstracts/mixins" as mix;
 .aside-left, .aside-right{
+    position: relative;
     width: 100%;
     margin-top: 1.5rem;
     position: relative;
@@ -9,4 +11,9 @@
     width: 100%;
     margin-top: 1rem;
     margin-bottom: .6rem;
+}
+@include mix.large {
+    .aside__btn {
+        display: none;
+    }
 }

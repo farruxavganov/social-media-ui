@@ -1,7 +1,11 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 html {
     box-sizing: border-box;
     font-size: 16px;
+    @include mix.medium {
+        font-size: 14px;
+    }
 }
 *,
 *::before,

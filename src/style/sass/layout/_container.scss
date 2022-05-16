@@ -1,4 +1,11 @@
+@use "../abstracts/mixins" as mix;
 .container {
     width: 94%;
+    max-width: 1400px;
     margin: 0 auto;
+}
+@include mix.x-small {
+    .container {
+        width: 100%;
+    }
 }

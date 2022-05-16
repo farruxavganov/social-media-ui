@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as mix;
 .requests {
     margin-top: .6rem;
 }
@@ -47,4 +48,10 @@
 .requests__btn--color {
     color: var(--color-white);
     background: var(--color-primary);
+}
+@include mix.medium {
+    .requests__btn {
+        padding: .6rem 1rem;
+        font-size: .8rem;
+    }
 }

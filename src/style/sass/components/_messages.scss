@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as mix;
 .messages {
     width: 100%;
     height: auto;
@@ -35,6 +36,7 @@
 .messages__text {
     padding: .7rem;
     font-weight: 600;
+    font-size: 1rem;
     border-bottom: 4px solid var(--color-light);
     &:hover {
         cursor: pointer;
@@ -77,4 +79,17 @@
     height: .8rem;
     border-radius: 50%;
     border: 2px solid white;
+}
+@include mix.medium {
+    .messages__text {
+        font-size: .7rem;
+    }
+    .messages__user--title {
+        font-size: 1rem;
+    }
+}
+@include mix.small {
+    .messages, .requests {
+        display: none;
+    }
 }
