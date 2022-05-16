@@ -64,3 +64,17 @@
     opacity: .8;
     margin-left: 5px;
 }
+.messages__user-img {
+    position: relative;
+}
+.messages__user-img--indecator::before {
+    content: '';
+    position: absolute;
+    bottom: .2rem;
+    right: .2rem;
+    background: var(--color-success);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
