@@ -672,6 +672,82 @@ p {
   opacity: 0.7;
 }
 
+.messages {
+  width: 100%;
+  height: auto;
+  background: var(--color-white);
+  color: var(--color-dark);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.messages__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  margin-top: 0.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.messages__title-box i {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.messages__title {
+  cursor: pointer;
+}
+
+.messages__search {
+  width: 100%;
+}
+
+.messages__control {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.messages__text {
+  padding: 0.7rem;
+  font-weight: 600;
+  border-bottom: 4px solid var(--color-light);
+}
+.messages__text:hover {
+  cursor: pointer;
+}
+
+.messages__text--active {
+  border-bottom-color: var(--color-dark) !important;
+}
+
+.messages__message {
+  margin-top: 1rem;
+}
+
+.messages__user {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.messages__user:hover {
+  cursor: pointer;
+}
+
+.messages__user--title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.messages__user--data {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-left: 5px;
+}
+
 .container {
   width: 94%;
   margin: 0 auto;
@@ -735,7 +811,7 @@ p {
   column-gap: 1.5rem;
 }
 
-.aside-left {
+.aside-left, .aside-right {
   width: 100%;
   margin-top: 1.5rem;
   position: relative;
