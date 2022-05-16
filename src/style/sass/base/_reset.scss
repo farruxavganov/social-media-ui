@@ -6,6 +6,9 @@ html {
     @include mix.medium {
         font-size: 14px;
     }
+    @include mix.x-small {
+        font-size: 10px;
+    }
 }
 *,
 *::before,

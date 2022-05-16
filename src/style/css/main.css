@@ -151,6 +151,11 @@ html {
     font-size: 14px;
   }
 }
+@media (max-width: 575.98px) {
+  html {
+    font-size: 10px;
+  }
+}
 
 *,
 *::before,
@@ -937,6 +942,7 @@ p {
   .main-grid {
     grid-template-columns: 0 auto 0;
     column-gap: 10px;
+    margin-top: 40px;
   }
 }
 .header {
