@@ -29,6 +29,7 @@
         </header>
         <div class="container main-grid">
             <aside class="aside-left">
+                <div class="wrapper">
                 <div class="user-info aside-left__user-info">
                     <div class="user-img user-info__img-box">
                         <img src="src/images/profile-1.jpg">
@@ -124,7 +125,7 @@
                             </a>
                         </li>
                         <li class="navbar__itme">
-                            <a href="#" class="navbar__link">
+                            <a href="#" class="navbar__link navbar__theme">
                                 <i class="fa-solid fa-palette navbar__icon"></i>
                                 <h4 class="navbar__title">Theme</h4>
                             </a>
@@ -138,6 +139,7 @@
                     </ul>
                 </nav>
                 <label for="create-post" class="btn text-color-white bg-color-primary aside__btn">Create now</label>
+                </div>
             </aside>
             <main class="main" id="main">
                 <div class="story">
@@ -479,6 +481,7 @@
                 </div>
             </main>
             <aside class="aside-right">
+                <div class="wrapper">
                 <div class="messages">
                     <div class="messages__title-box">
                         <p class="messages__title">messages</p>
@@ -486,7 +489,7 @@
                     </div>
                     <form class="search-bar messages__search">
                         <img src="src/icons/search.png" class="search-bar__search"> 
-                        <input type="text" class="search-bar__input" placeholder="Search..">
+                        <input type="text" class="search-bar__input messages__search-input" placeholder="Search..">
                     </form>
                     <div class="messages__control">
                         <p class="messages__text messages__text--active">Primary</p>
@@ -664,10 +667,11 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </aside>
         </div>
         <div class="pupap-box">
-            <div class="pupap">
+            <div class="pupap" onclick="event.stopPropagation()">
                 <div class="pupap__top">
                     <h4 class="pupap__title">Customize your view</h4>
                     <span class="pupap__disc">Manage your font size, color and background</span>
@@ -678,11 +682,11 @@
                         <div class="pupap__pupap__size-box">
                             <span class="pupap__frist">aA</span>
                             <div class="pupap__size-line">
-                                <span class="pupap__size active"></span>
-                                <span class="pupap__size"></span>
-                                <span class="pupap__size"></span>
-                                <span class="pupap__size"></span>
-                                <span class="pupap__size"></span>
+                                <span class="font-size-1 pupap__size active"></span>
+                                <span class="font-size-2 pupap__size"></span>
+                                <span class="font-size-3 pupap__size"></span>
+                                <span class="font-size-4 pupap__size"></span>
+                                <span class="font-size-5 pupap__size"></span>
                             </div>
                             <span class="pupap__last">aA</span>
                         </div>
@@ -691,11 +695,11 @@
                         <span class="pupap__color-title">Color</span>
                         <div class="pupap__color-box">
                             <div class="pupap__color-line">
-                                <span class="pupap__color bg-color-primary active"></span>
-                                <span class="pupap__color bg-color-yellow"></span>
-                                <span class="pupap__color bg-color-danger"></span>
-                                <span class="pupap__color bg-color-success"></span>
-                                <span class="pupap__color bg-color-blue-light"></span>
+                                <span class="pupap__color color-1 bg-color-primary active"></span>
+                                <span class="pupap__color color-2 bg-color-yellow"></span>
+                                <span class="pupap__color color-3 bg-color-danger"></span>
+                                <span class="pupap__color color-4 bg-color-success"></span>
+                                <span class="pupap__color color-5 bg-color-blue-light"></span>
                             </div>
                         </div>
                     </div>
@@ -703,17 +707,17 @@
                 <div class="pupap__bottom">
                     <span class="pupap__bg-title">Background</span>
                     <div class="pupap__bg-box">
-                        <div class="pupap__bg-wrapper bg-color-white active">
+                        <div class="pupap__bg-wrapper bg-1 bg-color-white active">
                             <span class="pupap__bg-color"></span>
                             <span class="pupap__bg-color-text">Light</span>
                         </div>
-                        <div class="pupap__bg-wrapper bg-color-dark">
+                        <div class="pupap__bg-wrapper bg-2 bg-color-dark">
                             <span class="pupap__bg-color"></span>
-                            <span class="pupap__bg-color-text text-color-white">Dim</span>
+                            <span class="pupap__bg-color-text">Dim</span>
                         </div>
-                        <div class="pupap__bg-wrapper bg-color-black">
+                        <div class="pupap__bg-wrapper bg-3 bg-color-black">
                             <span class="pupap__bg-color"></span>
-                            <span class="pupap__bg-color-text text-color-white">Lights out</span>
+                            <span class="pupap__bg-color-text ">Lights out</span>
                         </div>
                     </div>
                 </div>

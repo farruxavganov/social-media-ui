@@ -42,11 +42,12 @@
     border-radius: var(--border-radius);
     border: 0;
     outline: 0;
-    background: var(--color-light);
+    background: var(--color-gray);
     font-weight: 700;
+    color: white;
 }
+
 .requests__btn--color {
-    color: var(--color-white);
     background: var(--color-primary);
 }
 @include mix.medium {

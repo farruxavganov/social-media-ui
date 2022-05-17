@@ -1,9 +1,9 @@
 @use "../abstracts/mixins" as mix;
 .pupap-box {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,6 +12,7 @@
     z-index: 22;
 }
 .pupap {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,7 +21,8 @@
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     background: var(--color-white);
-    box-shadow: 0 0 5px 4px #999;
+    box-shadow: 0 0 5px 4px var(--color-primary);
+    z-index: 23;
 }
 .pupap__top {
     padding: var(--card-padding);
@@ -74,7 +76,7 @@
     cursor: pointer;
 }
 .pupap__size.active {
-    background: var(--color-dark) !important;
+    background: var(--color-primary) !important;
 }
 .pupap__color {
     width: 2rem;
@@ -108,7 +110,12 @@
     width: 100%;
     margin: 0 .3rem;
     border-radius: .3rem;
+    color: white;
     cursor: pointer;
+    background: white;
+}
+.pupap__bg-wrapper:first-child {
+    color: black;
 }
 .pupap__bg-wrapper.active {
     border: .1rem solid var(--color-primary);

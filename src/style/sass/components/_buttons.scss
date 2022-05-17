@@ -1,6 +1,7 @@
 .btn {
     padding: var(--btn-padding);
     border-radius: var(--border-radius);
+    color: white !important;
     &:hover {
         cursor: pointer;
         opacity: 0.8;

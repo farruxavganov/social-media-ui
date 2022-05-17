@@ -166,14 +166,18 @@ html {
 }
 
 :root {
-  --color-white: white;
-  --color-light: #f0eef6;
-  --color-gray: #9e98b3;
-  --color-primary: #6b4de6;
+  --primary-color-hue: 252;
+  --dark-color: 17%;
+  --light-color: 95%;
+  --white-color: 100%;
+  --color-white: hsl(252, 30%, var(--white-color));
+  --color-light: hsl(252, 30%, var(--light-color));
+  --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: #d6ccff;
   --color-success: #51fb51;
   --color-danger: #fb5151;
-  --color-dark: #241e38;
+  --color-dark: hsl(252, 30%, var(--dark-color));
   --color-black: #151221;
   --border-radius: 2rem;
   --card-border-radius: 1rem;
@@ -185,6 +189,7 @@ html {
 }
 
 body {
+  position: relative;
   background: var(--color-light);
   color: var(--color-dark);
   font-family: "Poppins", sans-serif;
@@ -226,6 +231,7 @@ p {
 .btn {
   padding: var(--btn-padding);
   border-radius: var(--border-radius);
+  color: white !important;
 }
 .btn:hover {
   cursor: pointer;
@@ -259,6 +265,7 @@ p {
   background: transparent;
   border: 0;
   outline: 0;
+  color: var(--color-dark);
   /* WebKit, Edge */
   /* Firefox 4-18 */
   /* Firefox 19+ */
@@ -290,6 +297,7 @@ p {
 .search-bar__search {
   position: absolute;
   width: 1.2rem;
+  height: 1.2rem;
   top: 0.5rem;
   left: 1rem;
 }
@@ -897,12 +905,12 @@ p {
   border-radius: var(--border-radius);
   border: 0;
   outline: 0;
-  background: var(--color-light);
+  background: var(--color-gray);
   font-weight: 700;
+  color: white;
 }
 
 .requests__btn--color {
-  color: var(--color-white);
   background: var(--color-primary);
 }
 
@@ -1024,7 +1032,6 @@ p {
   position: relative;
   width: 100%;
   margin-top: 1.5rem;
-  position: relative;
 }
 
 .aside__btn {
@@ -1081,18 +1088,18 @@ p {
 }
 
 .bg-color-dark {
-  background: var(--color-dark);
+  background: #241e38 !important;
 }
 
 .bg-color-black {
-  background: var(--color-black);
+  background: #151221 !important;
 }
 
 .pupap-box {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1102,6 +1109,7 @@ p {
 }
 
 .pupap {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1110,7 +1118,8 @@ p {
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
   background: var(--color-white);
-  box-shadow: 0 0 5px 4px #999;
+  box-shadow: 0 0 5px 4px var(--color-primary);
+  z-index: 23;
 }
 
 .pupap__top {
@@ -1175,7 +1184,7 @@ p {
 }
 
 .pupap__size.active {
-  background: var(--color-dark) !important;
+  background: var(--color-primary) !important;
 }
 
 .pupap__color {
@@ -1215,7 +1224,13 @@ p {
   width: 100%;
   margin: 0 0.3rem;
   border-radius: 0.3rem;
+  color: white;
   cursor: pointer;
+  background: white;
+}
+
+.pupap__bg-wrapper:first-child {
+  color: black;
 }
 
 .pupap__bg-wrapper.active {

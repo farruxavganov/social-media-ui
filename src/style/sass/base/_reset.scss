@@ -19,14 +19,18 @@ html {
 }
 
 :root {
-    --color-white: #{var.$color-white};
-    --color-light: #{var.$color-light};
-    --color-gray: #{var.$color-gray};
-    --color-primary: #{var.$color-primary};
+    --primary-color-hue: 252;
+    --dark-color: 17%;
+    --light-color: 95%;
+    --white-color: 100%;
+    --color-white: hsl(252, 30%, var(--white-color));
+    --color-light: hsl(252, 30%, var(--light-color));
+    --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
     --color-secondary: #{var.$color-secondary};
     --color-success: #{var.$color-success};
     --color-danger: #{var.$color-danger};
-    --color-dark: #{var.$color-dark};
+    --color-dark: hsl(252, 30%, var(--dark-color));
     --color-black: #{var.$color-black};
     
     --border-radius: #{var.$border-radius};
@@ -41,6 +45,7 @@ html {
 }
 
 body {
+    position: relative;
     background: var(--color-light);
     color: var(--color-dark);
     font-family: "Poppins", sans-serif;

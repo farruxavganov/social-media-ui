@@ -12,6 +12,7 @@
         background: transparent;
         border: 0;
         outline: 0;
+        color: var(--color-dark);
         /* WebKit, Edge */
         &::-webkit-input-placeholder {
             color: var(--color-dark);
@@ -43,6 +44,7 @@
 .search-bar__search {
     position: absolute;
     width: 1.2rem;
+    height: 1.2rem;
     top: .5rem;
     left: 1rem;
     
