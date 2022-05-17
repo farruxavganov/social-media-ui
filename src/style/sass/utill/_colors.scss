@@ -1,6 +1,27 @@
 .text-color-white {
     color: var(--color-white);
 }
+.bg-color-white {
+    background: var(--color-white);
+}
 .bg-color-primary {
     background: var(--color-primary);
+}
+.bg-color-success {
+    background: var(--color-success);
+}
+.bg-color-danger {
+    background: var(--color-danger);
+}
+.bg-color-yellow {
+    background: #f1e02a;
+}
+.bg-color-blue-light {
+    background: #46a3e5;
+}
+.bg-color-dark {
+    background: var(--color-dark);
+}
+.bg-color-black {
+    background: var(--color-black);
 }
