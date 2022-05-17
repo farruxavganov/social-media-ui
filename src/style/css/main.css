@@ -228,6 +228,10 @@ p {
   line-height: 18px;
 }
 
+input {
+  color: var(--color-dark) !important;
+}
+
 .btn {
   padding: var(--btn-padding);
   border-radius: var(--border-radius);
