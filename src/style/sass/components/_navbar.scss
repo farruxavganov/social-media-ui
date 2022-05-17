@@ -73,7 +73,9 @@
 }
 @include mix.x-small {
     .navbar {
+        top: 50%;
         right: 0;
+        transform: translateY(-50%);
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
     }
