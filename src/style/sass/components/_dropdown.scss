@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as mix;
 .dropdown {
     display: none;
     position: absolute;
@@ -35,4 +36,11 @@
     z-index: -1;
     transform: rotate(45deg);
     background: var(--color-white);
+}
+
+@include mix.small {
+    .dropdown::before {
+        left: auto;
+        right: -.6rem;
+    }
 }

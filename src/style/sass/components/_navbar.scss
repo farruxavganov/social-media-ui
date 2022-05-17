@@ -24,9 +24,11 @@
     }
 }
 .navbar__title {
+    pointer-events: none;
     font-weight: 600;
 }
 .navbar__icon {
+    pointer-events: none;
     margin-right: 1rem;
     margin-left: 1rem;
 }
@@ -69,6 +71,9 @@
     .navbar {
         right: 2rem;
         width: 5rem;
+    }
+    .dropdown {
+        left: -470%;
     }
 }
 @include mix.x-small {

@@ -362,10 +362,12 @@ p {
 }
 
 .navbar__title {
+  pointer-events: none;
   font-weight: 600;
 }
 
 .navbar__icon {
+  pointer-events: none;
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -415,6 +417,10 @@ p {
   .navbar {
     right: 2rem;
     width: 5rem;
+  }
+
+  .dropdown {
+    left: -470%;
   }
 }
 @media (max-width: 575.98px) {
@@ -471,6 +477,12 @@ p {
   background: var(--color-white);
 }
 
+@media (max-width: 767.98px) {
+  .dropdown::before {
+    left: auto;
+    right: -0.6rem;
+  }
+}
 .story {
   width: 100%;
   overflow: hidden;
